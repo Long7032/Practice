@@ -1,0 +1,34 @@
+Technology:
+- NoSQL (MongoDB)
+- RESTful API
+
+Function:
+- Return a list of articles. You can add filters such as publishing date, or tags.
+- Return a single article, specified by the ID of the article.
+- Create a new article to be published.
+- Delete a single article, specified by the ID.
+- Update a single article, again, you’d specify the article using its ID.
+
+Architecture DB
+
+users:[
+    {
+        "_id": "<userId>",
+        "name" "<userName>",
+        "email": "<Email>",
+        "passwordHash": "<PasswordHash>"
+    }
+]
+articles: [
+        {
+            "_id": "<articleID>",
+            "userID": "<UserID>",
+            "title": "<Title>",
+            "content": "<Content>",
+            "datePosted": "<DatePosted>",
+            "tags": ["<tag1>", "<tag2>"]
+        },
+        // More posts
+    ],
+
+
